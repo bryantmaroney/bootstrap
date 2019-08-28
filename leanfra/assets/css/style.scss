@@ -1,0 +1,325 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap');
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px; }
+
+span {
+  /* color: #f7931e;  */
+}
+
+$pgrey: #909094;
+
+a {
+  text-decoration: none;
+  /* color: #f7931e; */
+  cursor: pointer; }
+
+a:hover {
+  text-decoration: none;
+  color: #150b3d; }
+
+.paddingleft-zero {
+  padding-left: 0px; }
+
+.paddingright-zero {
+  padding-right: 0px; }
+
+.paddingzero {
+  padding: 0px; }
+
+  p, a, span{
+    font-family: "Montserrat", sans-serif;
+  }
+  input, select, textarea{
+    font-family: "Montserrat", sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+  }
+
+.section{
+  padding: 80px 0px;
+}
+
+header{
+  background-image: url('../img/header-bd.jpg');
+  .weblogo{
+    width: 225px;
+  }
+  .navbar-inverse {
+    background: none;
+    border: none;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+  }
+  .navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  ul.nav.navbar-nav.navbar-right {
+    margin-top: 19px;
+  }
+  .headertxttwocol{
+    padding: 40px 0px;
+    padding-bottom: 80px;
+    margin-top: 11%;
+    .welcometo{
+      width: 465px;
+      margin-left: 10%;
+      h1{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        color: #fff;
+        font-weight: 600;
+        span{
+        font-weight: 900;
+        }
+        strong{
+            border-bottom: 9px solid #78bdd9;
+        }
+      }
+      p{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #dbdeef;
+        font-weight: 400;
+        strong{
+          color: #fff;
+        }
+      }
+      .headerform{
+        margin-top: 30px;
+        input{
+          padding: 10px 20px;
+          padding-left: 30px;
+          background: #2f2655;
+          border: none;
+        }
+        .fa{
+          color: #9792a9;
+          margin-top: -24px !important;
+          display: block;
+          margin-left: 10px;
+        }
+        .sendrequest{
+          margin-top: 20px;
+          width: 100%;
+          text-align: left;
+          padding: 10px 15px;
+          border-radius: 4px;
+          background: transparent;
+          .fa{
+            margin-top: 0px !important;
+            display: initial;
+            color: #fff;
+          }
+          span{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  .netcpustroage{
+    color: #fff;
+    width: 345px;
+    margin-top: 20%;
+    .icon_haip{
+      margin-bottom: 30px;
+      img{
+        width: 62px;
+        margin: auto;
+      }
+      h3{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 600;
+        .fa{
+          color: #a083ff;
+          margin-left: 10px;
+        }
+      }
+      p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        color: #dbdeef;
+        font-weight: 400;
+      }
+    }
+  }
+
+}
+
+
+.whyleanfa{
+  padding: 130px 0px;
+  h2{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    color: #000;
+    font-weight: 900;  
+  }
+  p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #909094;
+    font-weight: 500;  
+  }
+  .bare_ihti {
+    margin-top: 10%;
+    img{
+      width: 100px;
+    }
+    .serviceleftimg{
+      width: 80%;
+      margin: auto;
+    }
+    h3{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #000;
+      font-weight: 900;  
+    }
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #909094;
+      font-weight: 500;  
+      padding-right: 11%;
+      line-height: 32px;
+    }
+  }
+  .bare_ihti_center{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    img{
+      width: 28% !important;
+      margin: auto;
+    }
+    p{
+      padding: 0px 16%;
+    }
+    h3{
+      font-size: 35px;
+    }
+  }
+  
+}
+
+.leanfra-pro{
+  background: #1b1443;
+  .head-subhead{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    h3{
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 36px;
+      color: #fff;
+      font-weight: 400;
+    }
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #909094;
+      font-weight: 400;
+    }
+    
+  }
+  .net-cpu-stroage{
+    margin-top: 8%;
+    .icon_net200give{
+      img{
+        width: 100px;
+        margin: auto;
+      }
+      h3{
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 600;
+        .fa{
+          color: #a083ff;
+          margin-left: 10px;
+        }
+      }
+      p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        color: #dbdeef;
+        font-weight: 400;
+      }
+    }
+
+  }
+}
+
+.dsad{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #909094;
+  font-weight: 400;
+}
+
+
+
+footer{
+  background: #f2f1f7;
+  padding: 80px 0px;
+  .socailmedia{
+    margin-top: 20px;
+    .fa{
+      color: #86829c;
+      font-size: 22px;
+      margin-right: 15px;
+    }
+  }
+  img{
+    width: 150px;
+  }
+  h3{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+  }
+  p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #909094;
+    font-weight: 500;
+  }
+  a{
+    color: #909094;
+  }
+}
+
+
+
+
+
+// body{
+//   display: none;
+// }
