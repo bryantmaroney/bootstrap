@@ -35,14 +35,23 @@ input, select, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif; }
 
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 30px; }
+
+.nav li:nth-child(5) {
+  border: 1px solid #30a2bc;
+  border-radius: 5px; }
+
 .section {
   padding: 80px 0px; }
 
 header {
   background-image: url("../img/header-bd.jpg");
   background-size: cover; }
-  header .weblogo {
-    width: 225px; }
+  header .weblogo img {
+    width: 125px; }
   header .navbar-inverse {
     background: none;
     border: none;
@@ -52,8 +61,6 @@ header {
     color: #fff;
     font-size: 12px;
     font-weight: 500; }
-  header ul.nav.navbar-nav.navbar-right {
-    margin-top: 19px; }
   header .headertxttwocol {
     padding: 40px 0px;
     padding-bottom: 80px;
@@ -419,12 +426,15 @@ header {
     list-style-type: circle; }
 
 .enterprice_trial_price {
+  width: 820px;
+  margin: auto;
   margin-top: 10%; }
   .enterprice_trial_price .enterpricebox {
     padding: 10% 10%;
     width: 400px;
     background: #dbdeef;
-    border-radius: 10px; }
+    border-radius: 10px;
+    float: left; }
   .enterprice_trial_price h4 {
     margin-top: 20px;
     margin-bottom: 0px;
@@ -442,26 +452,308 @@ header {
     color: #fff;
     padding: 10px 20px; }
   .enterprice_trial_price .trailbox {
-    padding: 10% 10%;
+    padding: 3% 10%;
     width: 400px;
-    background: #dbdeef;
-    border-radius: 10px; }
-  .enterprice_trial_price h4 {
+    background: #31295c;
+    border-radius: 10px;
+    margin-top: 60px; }
+    .enterprice_trial_price .trailbox h4 {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600; }
+    .enterprice_trial_price .trailbox p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 400; }
+    .enterprice_trial_price .trailbox .btn-border {
+      background: none;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 10px 20px; }
+
+.protoytype-cpu .purplebox-cpu {
+  background: #1b1446;
+  padding: 60px 55px;
+  border-top-right-radius: 10px; }
+  .protoytype-cpu .purplebox-cpu .getstartbtn {
+    margin-top: 88px;
+    width: 100%;
+    text-align: left;
+    padding: 30px 30px;
+    border-radius: 4px;
+    background: transparent; }
+    .protoytype-cpu .purplebox-cpu .getstartbtn span {
+      float: right; }
+    .protoytype-cpu .purplebox-cpu .getstartbtn .fa {
+      margin-top: 0px !important;
+      display: initial;
+      color: #fff; }
+  .protoytype-cpu .purplebox-cpu h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #909094;
+    font-weight: 600; }
+  .protoytype-cpu .purplebox-cpu p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400; }
+  .protoytype-cpu .purplebox-cpu .row {
+    margin-bottom: 20px; }
+.protoytype-cpu .borderbox-ppla.active {
+  background: #1b1446; }
+  .protoytype-cpu .borderbox-ppla.active h4, .protoytype-cpu .borderbox-ppla.active p {
+    color: #fff; }
+  .protoytype-cpu .borderbox-ppla.active h5 {
+    color: #000; }
+.protoytype-cpu .borderbox-ppla {
+  padding: 20px 20px;
+  border-top-left-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #909094; }
+  .protoytype-cpu .borderbox-ppla h4 {
+    margin-top: 7px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+    float: left; }
+  .protoytype-cpu .borderbox-ppla h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    float: right;
+    border-radius: 30px; }
+  .protoytype-cpu .borderbox-ppla p {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #1b1446;
+    font-weight: 500; }
+
+.brand-logos {
+  padding: 60px 0px;
+  background: #f2f1f7; }
+  .brand-logos img {
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px; }
+
+.bg-color-hide {
+  background: none; }
+
+.help-srpcmg {
+  margin-top: 60px; }
+  .help-srpcmg .srpcmg-box {
+    border: 1px solid #31295c;
+    padding: 20%;
+    border-radius: 5px;
+    margin-bottom: 20px; }
+    .help-srpcmg .srpcmg-box .fa {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 55px; }
+    .help-srpcmg .srpcmg-box h4 {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 700; }
+    .help-srpcmg .srpcmg-box p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 16px;
+      color: #dbdeef;
+      font-weight: 400; }
+
+.conatat-tech-form {
+  width: 700px;
+  margin: auto;
+  margin-top: 30px; }
+  .conatat-tech-form input, .conatat-tech-form textarea {
+    padding: 30px 20px;
+    padding-left: 30px;
+    background: #2f2655;
+    border: none; }
+  .conatat-tech-form .fa {
+    color: #9792a9;
+    margin-top: -36px !important;
+    display: block;
+    margin-left: 10px;
+    float: left; }
+  .conatat-tech-form .sendrequest {
     margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: transparent; }
+    .conatat-tech-form .sendrequest .fa {
+      margin-top: 4px !important;
+      display: initial;
+      color: #fff; }
+    .conatat-tech-form .sendrequest span {
+      float: right; }
+  .conatat-tech-form .fa-comment-o {
+    margin-top: -87px !important; }
+
+.whyleanfinnerheader {
+  background-image: url("../img/why-leanfra.jpg") !important;
+  background-size: cover;
+  height: 100vh; }
+  .whyleanfinnerheader .inner-header-head {
+    width: 475px;
+    margin: auto;
+    margin-top: 24%; }
+    .whyleanfinnerheader .inner-header-head h2 {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 44px;
+      color: #fff;
+      font-weight: 900; }
+    .whyleanfinnerheader .inner-header-head p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #dbdeef;
+      font-weight: 400;
+      line-height: 35px; }
+
+.whatwedobg {
+  background-image: url("../img/what-we-do.jpg") !important;
+  background-size: cover;
+  height: 100vh; }
+  .whatwedobg .inner-header-head {
+    width: 475px;
+    margin: auto;
+    margin-top: 24%; }
+    .whatwedobg .inner-header-head h2 {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 44px;
+      color: #fff;
+      font-weight: 900; }
+    .whatwedobg .inner-header-head p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #dbdeef;
+      font-weight: 400;
+      line-height: 35px; }
+
+.whatismissionbg {
+  background-image: url("../img/whatismission.jpg") !important;
+  background-size: cover;
+  height: 100vh; }
+  .whatismissionbg .inner-header-head {
+    width: 525px;
+    margin: auto;
+    margin-top: 24%; }
+    .whatismissionbg .inner-header-head h2 {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 44px;
+      color: #fff;
+      font-weight: 900; }
+    .whatismissionbg .inner-header-head p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #dbdeef;
+      font-weight: 400;
+      line-height: 35px; }
+
+.whatisgoal {
+  background-image: url("../img/bg-liner.png") !important;
+  background-size: cover;
+  height: 100vh; }
+  .whatisgoal .inner-header-head {
+    width: 525px;
+    margin: auto;
+    margin-top: 24%; }
+    .whatisgoal .inner-header-head h2 {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 44px;
+      color: #000;
+      font-weight: 900; }
+    .whatisgoal .inner-header-head img {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+
+.proserviceinnerheader {
+  background-image: url("../img/object-services.jpg") !important;
+  background-size: cover; }
+
+.proservices .bare_ihti {
+  margin-top: 0%;
+  margin-bottom: 40px; }
+  .proservices .bare_ihti img {
+    width: 100px; }
+  .proservices .bare_ihti .serviceleftimg {
+    width: 80%;
+    margin: auto; }
+  .proservices .bare_ihti h3 {
+    margin-top: 125px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #000;
+    font-weight: 900; }
+  .proservices .bare_ihti p {
+    margin-top: 0px;
     margin-bottom: 0px;
     font-size: 18px;
     color: #000;
-    font-weight: 600; }
-  .enterprice_trial_price p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #000;
-    font-weight: 400; }
-  .enterprice_trial_price .btn-border {
-    background: #150b3d;
-    color: #fff;
-    padding: 10px 20px; }
+    font-weight: 500;
+    padding-right: 11%;
+    line-height: 32px; }
+.proservices .bare_ihti_center {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 7%; }
+  .proservices .bare_ihti_center img {
+    width: 28% !important;
+    margin: auto; }
+  .proservices .bare_ihti_center p {
+    padding: 0px 16%;
+    color: #909094; }
+  .proservices .bare_ihti_center h3 {
+    font-size: 35px;
+    margin-top: 0px; }
+
+.sixcolicontxt-proservice {
+  margin-bottom: 60px; }
+
+.tryleanfra {
+  height: 100vh; }
+  .tryleanfra .leanfra-pro {
+    background: none;
+    margin-top: 15%; }
+  .tryleanfra .tryleanfrafreeheadpara img {
+    width: 100px;
+    margin: auto; }
+  .tryleanfra .tryleanfrafreeheadpara .colorline {
+    width: 200px;
+    margin-top: 30px; }
+  .tryleanfra .steponelenfra {
+    width: 63% !important; }
+
+.tryleanfrastepbg {
+  height: auto; }
 
 .dsad {
   margin-top: 0px;
@@ -495,5 +787,15 @@ footer p {
   font-weight: 500; }
 footer a {
   color: #909094; }
+footer .bottom-footer {
+  padding: 20px 0px;
+  background: #fff; }
+  footer .bottom-footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #909094;
+    font-weight: 600;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

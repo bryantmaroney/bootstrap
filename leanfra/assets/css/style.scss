@@ -11,6 +11,7 @@ span {
 
 $pgrey: #909094;
 $purpel: #1b1446;
+$plightwhite:#dbdeef;
 
 a {
   text-decoration: none;
@@ -40,6 +41,19 @@ a:hover {
     font-family: "Montserrat", sans-serif;
   }
 
+  .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+  }
+  .nav{
+    li:nth-child(5){
+      border: 1px solid #30a2bc;
+      border-radius: 5px;
+    }
+  }
+  
+
 .section{
   padding: 80px 0px;
 }
@@ -48,8 +62,8 @@ header{
   background-image: url('../img/header-bd.jpg');
   background-size: cover;
   
-  .weblogo{
-    width: 225px;
+  .weblogo img{
+    width: 125px;
   }
   .navbar-inverse {
     background: none;
@@ -62,9 +76,9 @@ header{
     font-size: 12px;
     font-weight: 500;
   }
-  ul.nav.navbar-nav.navbar-right {
-    margin-top: 19px;
-  }
+  // ul.nav.navbar-nav.navbar-right {
+  //   margin-top: 19px;
+  // }
   .headertxttwocol{
     padding: 40px 0px;
     padding-bottom: 80px;
@@ -546,12 +560,15 @@ header{
 
 
 .enterprice_trial_price{
+  width: 820px;
+  margin: auto;
   margin-top: 10%;
   .enterpricebox{
     padding: 10% 10%;
     width: 400px;
     background: #dbdeef;
     border-radius: 10px;
+    float: left;
   }
  
   h4{
@@ -575,32 +592,385 @@ header{
   }
   .trailbox{
 
-    padding: 10% 10%;
+    padding: 3% 10%;
     width: 400px;
-    background: #dbdeef;
+    background: #31295c;
     border-radius: 10px;
+    margin-top: 60px;
+    h4{
+      margin-top: 20px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 600;
+    }
+    p{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 400;
+    }
+    .btn-border{
+      background: none;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+    }
   }
  
-  h4{
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 18px;
-    color: #000;
-    font-weight: 600;
+  
+}
+
+.protoytype-cpu{
+  .purplebox-cpu{
+    background: $purpel;
+    padding: 60px 55px;
+    border-top-right-radius: 10px;
+    .getstartbtn{
+      margin-top: 88px;
+      width: 100%;
+      text-align: left;
+      padding: 30px 30px;
+      border-radius: 4px;
+      background: transparent;
+      span {
+        float: right;
+      }
+      .fa{
+        margin-top: 0px !important;
+        display: initial;
+        color: #fff;
+      }
+    }
+    h3{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size:18px;
+      color: $pgrey;
+      font-weight: 600;
+    }
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size:18px;
+      color: #fff;
+      font-weight: 400;
+    }
+    .row{
+      margin-bottom: 20px;
+    }
   }
-  p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #000;
-    font-weight: 400;
+  .borderbox-ppla.active{
+    background: $purpel;
+    h4,p{
+      color: #fff;
+    }
+    h5{
+      color: #000;
+    }
   }
-  .btn-border{
-    background: #150b3d;
-    color: #fff;
-    padding: 10px 20px;
+  .borderbox-ppla{
+    padding: 20px 20px;
+    border-top-left-radius: 10px;
+    margin-bottom: 10px;
+    border:1px solid $pgrey;
+    h4{
+      margin-top: 7px;
+      margin-bottom: 0px;
+      font-size:22px;
+      color: #000;
+      font-weight: 700;
+      float: left;
+      
+    }
+    h5{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 12px;
+      color: #fff;
+      font-weight: 600;
+      background: #fff;
+      padding: 10px;
+      text-align: center;
+      width: 100px;
+      float: right;
+      border-radius: 30px;
+    }
+    p{
+      margin-top: 30px;
+      margin-bottom: 0px;
+      font-size: 14px;
+      color: $purpel;
+      font-weight: 500;
+    }
   }
 }
+.brand-logos{
+  padding: 60px 0px;
+  background: #f2f1f7;
+  img{
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+  }
+}
+
+
+.bg-color-hide{
+  background: none;
+}
+.help-srpcmg{
+  margin-top: 60px;
+  .srpcmg-box{
+    border: 1px solid #31295c;
+    padding: 20%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    .fa{
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 55px;
+    }
+    h4{
+      margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    }
+    p{
+      margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: $plightwhite;
+    font-weight: 400;
+    }
+  }
+}
+
+
+.conatat-tech-form{
+  width: 700px;
+  margin: auto;
+  margin-top: 30px;
+
+  input,textarea{
+    padding: 30px 20px;
+    padding-left: 30px;
+    background: #2f2655;
+    border: none;
+  }
+  .fa{
+    color: #9792a9;
+    margin-top: -36px !important;
+    display: block;
+    margin-left: 10px;
+    float: left;
+  }
+  .sendrequest{
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: transparent;
+    .fa{
+      margin-top: 4px !important;
+      display: initial;
+      color: #fff;
+    }
+    span{
+      float: right;
+    }
+  }
+  .fa-comment-o{
+    margin-top: -87px !important;
+  }
+}
+
+
+.whyleanfinnerheader{
+  background-image: url('../img/why-leanfra.jpg') !important;
+  background-size: cover;
+  height: 100vh;
+  .inner-header-head{
+    width: 475px;
+    margin: auto;
+    margin-top: 24%;
+    h2{
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 44px;
+      color: #fff;
+      font-weight: 900;
+    }
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: $plightwhite;
+      font-weight: 400;
+      line-height: 35px;
+    }
+  }
+}
+
+
+  .whatwedobg{
+    background-image: url('../img/what-we-do.jpg') !important;
+  background-size: cover;
+  height: 100vh;
+  .inner-header-head{
+    width: 475px;
+    margin: auto;
+    margin-top: 24%;
+    h2{
+      margin-top: 0px;
+      margin-bottom: 20px;
+      font-size: 44px;
+      color: #fff;
+      font-weight: 900;
+    }
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: $plightwhite;
+      font-weight: 400;
+      line-height: 35px;
+    }
+  }
+  }
+  .whatismissionbg{
+    background-image: url('../img/whatismission.jpg') !important;
+    background-size: cover;
+    height: 100vh;
+    .inner-header-head{
+      width: 525px;
+      margin: auto;
+      margin-top: 24%;
+      h2{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: 44px;
+        color: #fff;
+        font-weight: 900;
+      }
+      p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 18px;
+        color: $plightwhite;
+        font-weight: 400;
+        line-height: 35px;
+      }
+    }
+  }
+
+.whatisgoal{
+  background-image: url('../img/bg-liner.png') !important;
+    background-size: cover;
+    height: 100vh;
+    .inner-header-head{
+      width: 525px;
+      margin: auto;
+      margin-top: 24%;
+      h2{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: 44px;
+        color: #000;
+        font-weight: 900;
+      }
+     img{
+      margin-top: 0px;
+      margin-bottom: 0px;
+     }
+    }
+}
+
+.proserviceinnerheader{
+  background-image: url('../img/object-services.jpg') !important;
+  background-size: cover;
+}
+.proservices{
+  .bare_ihti {
+    margin-top: 0%;
+    margin-bottom: 40px;
+    img{
+      width: 100px;
+    }
+    .serviceleftimg{
+      width: 80%;
+      margin: auto;
+    }
+    h3{
+      margin-top: 125px;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #000;
+      font-weight: 900;  
+    }
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      color: #000;
+      font-weight: 500;  
+      padding-right: 11%;
+      line-height: 32px;
+    }
+  }
+  .bare_ihti_center{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    img{
+      width: 28% !important;
+      margin: auto;
+    }
+    p{
+      padding: 0px 16%;
+      color: $pgrey;
+    }
+    h3{
+      font-size: 35px;
+      margin-top: 0px;
+    }
+  }
+}
+.sixcolicontxt-proservice{
+  margin-bottom: 60px;
+}
+
+.tryleanfra{
+  height: 100vh;
+  .leanfra-pro{
+    background: none;
+    margin-top: 15%;
+  }
+  .tryleanfrafreeheadpara{
+    img{
+      width: 100px;
+      margin: auto;
+    }
+    .colorline{
+      width: 200px;
+      margin-top: 30px;
+    }
+  }
+  .steponelenfra{
+    width: 63% !important;
+  }
+}
+.tryleanfrastepbg{
+  height: auto;
+}
+
+
 // body
 // {display: none;}
 
@@ -647,6 +1017,18 @@ footer{
   }
   a{
     color: #909094;
+  }
+  .bottom-footer{
+    padding: 20px 0px;
+    background: #fff;
+    p{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 14px;
+      color: #909094;
+      font-weight: 600;
+      text-align: center;
+    }
   }
 }
 
