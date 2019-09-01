@@ -11,15 +11,18 @@ span {
 
 $pgrey: #909094;
 $purpel: #1b1446;
-$plightwhite:#dbdeef;
+$plightwhite:rgba(219, 222, 239, .6);
 
 a {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+
   /* color: #f7931e; */
   cursor: pointer; }
 
 a:hover {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
   color: #150b3d; }
 
 .paddingleft-zero {
@@ -61,9 +64,13 @@ a:hover {
 header{
   background-image: url('../img/header-bd.jpg');
   background-size: cover;
-  
+  ul.nav.navbar-nav.navbar-right {
+    margin-right: 20px;
+    margin-top: 15px;
+}
   .weblogo img{
-    width: 125px;
+    width: 175px;
+    margin-left: 10px;
   }
   .navbar-inverse {
     background: none;
@@ -73,7 +80,7 @@ header{
   }
   .navbar-inverse .navbar-nav>li>a {
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
   }
   // ul.nav.navbar-nav.navbar-right {
@@ -96,13 +103,13 @@ header{
         font-weight: 900;
         }
         strong{
-            border-bottom: 9px solid #78bdd9;
+            border-bottom: 5px  solid #78bdd9;
         }
       }
       p{
         margin-top: 0px;
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: 16px;
         color: #dbdeef;
         font-weight: 400;
         strong{
@@ -156,7 +163,7 @@ header{
       h3{
         margin-top: 0px;
         margin-bottom: 10px;
-        font-size: 14px;
+        font-size: 16px;
         color: #fff;
         font-weight: 600;
         .fa{
@@ -167,7 +174,7 @@ header{
       p{
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 14px;
+        font-size: 16px;
         color: #dbdeef;
         font-weight: 400;
       }
@@ -207,7 +214,7 @@ header{
       margin-bottom: 20px;
       font-size: 28px;
       color: #000;
-      font-weight: 900;  
+      font-weight: 700;  
     }
     p{
       margin-top: 0px;
@@ -249,13 +256,13 @@ header{
       margin-bottom: 20px;
       font-size: 36px;
       color: #fff;
-      font-weight: 400;
+      font-weight: 600;
     }
     p{
       margin-top: 0px;
       margin-bottom: 0px;
-      font-size: 18px;
-      color: #909094;
+      font-size: 20px;
+      color: $plightwhite;
       font-weight: 400;
     }
     
@@ -354,14 +361,16 @@ header{
 
   text-align: center;
   .inner-header-head{
+    h2{
     margin-top: 30%;
     margin-bottom: 0px;
-    font-size: 46px;
+    font-size: 36px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     strong{
       font-weight: 700;
     }
+  }
   }
 }
 
@@ -498,7 +507,7 @@ header{
   ul.listcircle li{
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 18px;
+    font-size: 16px;
     color: #909094;
     font-weight: 500;
     padding-right: 11%;
@@ -589,6 +598,7 @@ header{
     background: #150b3d;
     color: #fff;
     padding: 10px 20px;
+    border: none;
   }
   .trailbox{
 
@@ -630,10 +640,11 @@ header{
     .getstartbtn{
       margin-top: 88px;
       width: 100%;
+      font-size: 20px;
+      font-weight: 700;
       text-align: left;
       padding: 30px 30px;
       border-radius: 4px;
-      background: transparent;
       span {
         float: right;
       }
@@ -662,7 +673,13 @@ header{
     }
   }
   .borderbox-ppla.active{
-    background: $purpel;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9e82fd+24,9e82fd+24,1e1647+100 */
+background: #9e82fd; /* Old browsers */
+background: -moz-linear-gradient(left,  #9e82fd 24%, #9e82fd 24%, #1e1647 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #9e82fd 24%,#9e82fd 24%,#1e1647 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #9e82fd 24%,#9e82fd 24%,#1e1647 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e82fd', endColorstr='#1e1647',GradientType=1 ); /* IE6-9 */
+
     h4,p{
       color: #fff;
     }
@@ -737,7 +754,7 @@ header{
     margin-bottom: 10px;
     font-size: 20px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
     }
     p{
       margin-top: 0px;
@@ -754,7 +771,15 @@ header{
   width: 700px;
   margin: auto;
   margin-top: 30px;
-
+  P{
+    font-size: 12px !important;
+    color: $plightwhite !important;
+    text-align: left !important;
+  }
+  .googlebot{
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
   input,textarea{
     padding: 30px 20px;
     padding-left: 30px;
@@ -965,9 +990,76 @@ header{
   .steponelenfra{
     width: 63% !important;
   }
+  .form-steps{
+    h4{
+      margin-top: 0px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 400;
+      text-align: right;
+      
+    }
+    h5{
+      margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: 3px solid #656687;
+    width: 187px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    }
+    img{
+      width: 215px !important;
+      float: right;
+    }
+  }
 }
 .tryleanfrastepbg{
   height: auto;
+}
+.btn-blog{
+  button{
+    text-align: left;
+    padding: 10px 15px;
+    background: none;
+    color: #fff;
+    width: 170px;
+    margin: auto;
+    margin-top: 20px;
+
+    span{
+      float:right;
+    }
+  }
+}
+
+.boderthreecolors{
+  border: 1px solid !important;
+  border-image-source: linear-gradient(45deg, rgb(157,135,252), rgb(103,214,202))  !important;
+  border-image-slice: 1  !important;
+  border-radius: 12px !important;
+}
+.bgcolorthree{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9e85fe+0,67d6c9+100 */
+background: #9e85fe !important; /* Old browsers */
+background: -moz-linear-gradient(left,  #9e85fe 0%, #67d6c9 100%) !important; /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #9e85fe 0%,#67d6c9 100%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #9e85fe 0%,#67d6c9 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e85fe', endColorstr='#67d6c9',GradientType=1 ) !important; /* IE6-9 */
+
+}
+.bgtwolcolor{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9e82fd+24,9e82fd+24,1e1647+100 */
+background: #9e82fd !important; /* Old browsers */
+background: -moz-linear-gradient(left,  #9e82fd 24%, #9e82fd 24%, #1e1647 100%) !important; /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #9e82fd 24%,#9e82fd 24%,#1e1647 100%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #9e82fd 24%,#9e82fd 24%,#1e1647 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e82fd', endColorstr='#1e1647',GradientType=1 ) !important; /* IE6-9 */
+
 }
 
 
